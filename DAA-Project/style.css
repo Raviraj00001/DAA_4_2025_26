@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+    color: white;
+}
+
+#maze {
+    display: grid;
+    grid-template-columns: repeat(8, 55px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.cell {
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    transition: 0.3s;
+}
+
+.path { background: #34495e; }
+.wall { background: black; }
+.rat { background: orange; }
+.goal { background: #27ae60; }
+.visited { background: #3498db; }
+.shortest { background: yellow; color: black; }
+
+button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
